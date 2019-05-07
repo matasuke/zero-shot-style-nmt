@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+test = "pytest"
+jupyter = "jupyter notebook"
+get_coverage = "python -m pytest --cov=./"
+pytest = "python -m pytest -vv"
+codecov = "codecov --token="
+
+[packages]
+pyyaml = "*"
+torch= ">=1.0"
+torchvision = "*"
+torchtext = "*"
+scipy = "*"
+nltk = "*"
+gensim = "*"
+
+[dev-packages]
+codecov = "*"
+flake8 = "==3.5.0"
+mypy = "*"
+jupyter = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.6.5"
